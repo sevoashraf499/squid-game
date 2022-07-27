@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  display: block;
+  z-index: 0;
+}
+
+.go {
+  color: white;
+  position: fixed;
+  top: 17px;
+  left: 50%;
+  font-weight: bold;
+  transform: translateX(-50%);
+  font-size: 50px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 20px 1px rgba(122, 122, 122, 0.3);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup > h1 {
+  color: #8c2603;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+.popup > p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.popup > .description > span {
+  color: #8c2603;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.popup > .rules > span {
+  color: #b5b301;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.popup > button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #b5b301;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px 1px rgba(122, 122, 122, 0.3);
+  cursor: pointer;
+}
